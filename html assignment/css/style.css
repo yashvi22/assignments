@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.navbar-brand {
+    padding: 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+}
+
+.footer {
+    background-color: #beacec;
+    margin: 0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.address {
+    font-size: 80%;
+    margin: 0px;
+    color: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index: 0px;
+}
+
+.navbar-dark {
+    background-color: #512DAB;
+}
+
+.header-container {
+    position: relative;
+    margin: 10px;
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 0px;
+    left: 12px;
+    color: floralwhite;
+}
+
+.jumbotron {
+    padding: 70px 30px 70px 30px;
+    margin: 0px auto;
+}
