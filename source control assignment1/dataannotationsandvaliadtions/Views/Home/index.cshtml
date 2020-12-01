@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Registration Page";
+}
+
+@model dataannotationsandvalidations.Models.RegistrationModel
+
+
+<h2>Register Here!!</h2>
+
+@using (Html.BeginForm("Details", "Home", FormMethod.Post))
+{
+<ol>
+    <li>
+        @Html.LabelFor(m => m.FirstName)
+        @Html.TextBoxFor(m => m.FirstName)
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </li>
+    
+    <li>
+        @Html.LabelFor(m => m.LastName)
+        @Html.TextBoxFor(m => m.LastName)
+        @Html.ValidationMessageFor(m => m.LastName)
+    </li>
+
+    <li>
+        @Html.LabelFor(m => m.Age)
+        @Html.TextBoxFor(m => m.Age)
+        @Html.ValidationMessageFor(m => m.Age)
+    </li>
+   
+    <li>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </li>
+   
+    <li>
+        @Html.LabelFor(m => m.Password)
+        @Html.TextBoxFor(m => m.Password)
+        @Html.ValidationMessageFor(m => m.Password)
+    </li>
+   
+    <li>
+        @Html.LabelFor(m => m.ConfirmPassword)
+        @Html.TextBoxFor(m => m.ConfirmPassword)
+        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+    </li>
+    
+</ol>
+
+   
+
+    <button type="submit" value="Register">Register</button>
+}
+
+
