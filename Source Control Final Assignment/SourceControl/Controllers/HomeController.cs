@@ -13,17 +13,15 @@ namespace SourceControl.Controllers
             return View();
         }
 
-        public ActionResult About()
+        
+       public ActionResult Registration()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        
+        public ActionResult DashBoard()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }
