@@ -3,12 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using SourceControl.Custom_Validations;
 
 namespace SourceControl.Models
 {
     public class RegistrationModel
     {
+        [Key] [DatabaseGenerated(System.ComponentModel.DataAnnotations.Schema.DatabaseGeneratedOption.Identity)]
+        public int Id;
+
         [Required]
         [StringLength(15, ErrorMessage = "it should not be more than 15 characters and less than 3 characters", MinimumLength = 3)]
         public string FirstName { get; set; }

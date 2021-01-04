@@ -26,29 +26,22 @@ namespace SourceControl.Controllers
         }
 
         [HttpPost]
-        public ActionResult RegisterDetails(RegistrationModel register)
+        public ActionResult Register(employees_details register)
         {
-                using (var databaseContext= new employeesEntities())
+            if(ModelState.IsValid)
+            {
+                using (employeesEntities context = new employeesEntities())
                 {
-                    RegisterationModelDB model = new RegisterationModelDB();
-                    {
-                        model.FirstName = register.FirstName;
-                        model.LastName = register.LastName;
-                        model.DateOfBirth = register.DateOfBirth;
-                        model.Age = register.Age;
-                        model.Email = register.Email;
-                        model.Password = register.Password;
-                        model.Qualification = register.Qualification;
-                        model.Phone = register.Phone;
+                    context.employees_details.Add(register);
+                    context.SaveChanges();
+                    int id = register.Id;
 
-                    }
-
-                databaseContext.RegisterationModelDB.Add(model);
-                databaseContext.SaveChanges();
+                }
                 
-            }
 
-            return RedirectToAction("Dashboard);
+            }
+            
+            return RedirectToAction("Login");
         }
 
         //login page
@@ -60,9 +53,31 @@ namespace SourceControl.Controllers
         [HttpPost]
         public ActionResult Login(LoginModel login)
         {
+            if (ModelState.IsValid)
+            {
+                using (employeesEntities context= new employeesEntities())
+                {
+                    var query= context.employees_details.Where(a=>a.Email.Equals(login.Email) && a.Password.Equals(login.Password)).FirstOrDefault();  
+                    if (query !=null)
+                    {
+                        Session["Id"] = query.Id;
+                        Session["Email"] = query.Email;
+                        return RedirectToAction("Dashboard");
+
+                    }
+                }
+            }
             return View();
         }
 
+        public ActionResult Dashboard()
+        {
+            return View();
+        }
 
+        public ActionResult Logout()
+        {
+            return RedirectToAction("Login");
+        }
     }
 }
