@@ -1,5 +1,0 @@
-C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Pre-Joining Assignment\ProductManagementSystem\ProductManagementSytem.Model\bin\Debug\ProductManagementSytem.Model.dll
-C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Pre-Joining Assignment\ProductManagementSystem\ProductManagementSytem.Model\bin\Debug\ProductManagementSytem.Model.pdb
-C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Pre-Joining Assignment\ProductManagementSystem\ProductManagementSytem.Model\obj\Debug\ProductManagementSystem.Model.csprojResolveAssemblyReference.cache
-C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Pre-Joining Assignment\ProductManagementSystem\ProductManagementSytem.Model\obj\Debug\ProductManagementSytem.Model.dll
-C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Pre-Joining Assignment\ProductManagementSystem\ProductManagementSytem.Model\obj\Debug\ProductManagementSytem.Model.pdb
