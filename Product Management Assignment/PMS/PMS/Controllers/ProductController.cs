@@ -204,6 +204,7 @@ namespace PMS.Controllers
                         return RedirectToAction("GetAllProducts");
                     }
                 }
+                return RedirectToAction("Delete");
             }
         }
     }         
