@@ -1,0 +1,61 @@
+﻿@model IEnumerable<PMS.Models.Products>
+
+@{
+    ViewBag.Title = "GetAllProducts";
+}
+
+<h2>GetAllProducts</h2>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Find by name: @Html.TextBox("Search")
+        <input type="submit" value="Search" />
+    </p>
+}
+<p>
+    @Html.ActionLink("AddProduct", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.ActionLink("Name","GetAllProducts",new { sortBy= ViewBag.SortByName })
+        </th>
+        <th>
+            @Html.ActionLink("CategoryName", "GetAllProducts", new { sortBy = ViewBag.SortByCategory })
+        </th>
+        <th>
+            @Html.ActionLink("Price", "GetAllProducts", new { sortBy = ViewBag.SortByPrice })
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategoryName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SmallImage)
+        </td>
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.SmallDescription)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>
