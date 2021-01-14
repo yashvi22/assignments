@@ -1,0 +1,5 @@
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Constants\bin\Debug\HotelManagement.Constants.dll
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Constants\bin\Debug\HotelManagement.Constants.pdb
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Constants\obj\Debug\HotelManagement.Constants.csprojResolveAssemblyReference.cache
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Constants\obj\Debug\HotelManagement.Constants.dll
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Constants\obj\Debug\HotelManagement.Constants.pdb
