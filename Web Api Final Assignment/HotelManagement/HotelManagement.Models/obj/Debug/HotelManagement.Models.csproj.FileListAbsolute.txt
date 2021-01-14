@@ -1,0 +1,5 @@
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Models\bin\Debug\HotelManagement.Models.dll
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Models\bin\Debug\HotelManagement.Models.pdb
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Models\obj\Debug\HotelManagement.Models.csprojResolveAssemblyReference.cache
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Models\obj\Debug\HotelManagement.Models.dll
+C:\Users\YASHVI\Desktop\yashvi\records\gateway\assignments\Web Api Final Assignment\HotelManagement\HotelManagement.Models\obj\Debug\HotelManagement.Models.pdb
